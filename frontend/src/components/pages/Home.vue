@@ -5,7 +5,7 @@
   </div>
   <div class = "content">
 
-    <button type="make" id = "popup-btn">Создать очередь</button>
+    <my-button class="make">Создать очередь</my-button>
 <!--    <div id="modal-background"></div>-->
 <!--    <div id ="popup">-->
 <!--      <div class="popup-header">-->
@@ -40,15 +40,16 @@
   </div>
   <div class = "content2">
     <form action="Line.html">
-      <button type="geton">Встать в очередь</button>
+      <my-button class="geton">Встать в очередь</my-button>
     </form>
   </div>
 </template>
 
 <script>
+import MyButton from "@/components/UI/MyButton.vue";
 export default {
-  name: "Home.vue"
-
+  name: "Home.vue",
+  components: {MyButton}
 }
 </script>
 
@@ -114,19 +115,25 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
 }
-button[type="make"] {
-  height: auto;
-  width: 100%;
+/*button[type="make"] {*/
+/*  height: auto;*/
+/*  width: 100%;*/
 
+/*  color: white;*/
+/*  border: 3px solid #ffffff;*/
+/*  background-color: #0075FF;*/
+/*  border-radius: 10px;*/
+/*  font-weight: bold;*/
+/*  font-size: 21px;*/
+/*  padding-top: 17px;*/
+/*  padding-bottom: 17px;*/
+/*  margin: 0;*/
+/*}*/
+
+.make {
   color: white;
   border: 3px solid #ffffff;
   background-color: #0075FF;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 21px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin: 0;
 }
 
 input[type="link"] {
@@ -147,19 +154,25 @@ input[type="link"] {
 
 }
 
-button[type="geton"] {
-  height: auto;
-  width: 100%;
+/*button[type="geton"] {*/
+/*  height: auto;*/
+/*  width: 100%;*/
 
+/*  color: white;*/
+/*  border: 3px solid #0075FF;*/
+/*  background-color: #0075FF;*/
+/*  border-radius: 10px;*/
+/*  font-weight: bold;*/
+/*  font-size: 21px;*/
+/*  padding-top: 17px;*/
+/*  padding-bottom: 17px;*/
+/*  margin: 0;*/
+/*}*/
+
+.geton {
   color: white;
   border: 3px solid #0075FF;
   background-color: #0075FF;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 21px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin: 0;
 }
 
 form {
