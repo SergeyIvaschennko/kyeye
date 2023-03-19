@@ -6,3 +6,5 @@ backend/service/Queue/migrations/
 backend/service/.DS_Store
 .DS_Store
 frontend/node_modules
+/service/JWTUser/migrations/
+/service/Queue/migrations/
