@@ -18,14 +18,18 @@ export default {
 
 <style scoped>
 .input {
+  border-radius: 10px;
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 56px;
+  padding-left: 15px;
+  padding-right: 0px;
+  margin: 0;
   width: 100%;
-  border: 2px solid rgb(52, 114, 238);
-  padding: 15px 15px;
-  margin-top: 15px;
-  font-size: 15px;
-  font-weight: 600;
-  color: black;
-  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
 }
 
 </style>

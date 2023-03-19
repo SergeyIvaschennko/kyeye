@@ -36,7 +36,7 @@
       очереди?</h1>
   </div>
   <div class = "content2">
-    <input type="link" placeholder="Вставьте ссылку" name="username" required>
+    <my-input class="link" placeholder="Вставьте ссылку"></my-input>
   </div>
   <div class = "content2">
     <form action="###">
@@ -47,9 +47,10 @@
 
 <script>
 import MyButton from "@/components/UI/MyButton.vue";
+import MyInput from "@/components/UI/MyInput.vue";
 export default {
   name: "Home.vue",
-  components: {MyButton}
+  components: {MyButton, MyInput}
 }
 </script>
 
@@ -122,21 +123,9 @@ h1 {
   background-color: #0075FF;
 }
 
-input[type="link"] {
+.link {
   border: 3px solid #0075FF;
   background-color: #ffffff;
-  border-radius: 10px;
-  font-weight: bold;
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 56px;
-  padding-left: 15px;
-  padding-right: 0px;
-  margin: 0;
-  width: 100%;
-  font-size: 16px;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: normal;
 }
 
 .geton {
@@ -151,7 +140,6 @@ form {
 .line {
   width: 100%;
   border-bottom: 1px solid #CCCCCC;
-  font: weight;
 }
 #time-input {
   width: 100px;
