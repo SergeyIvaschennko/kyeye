@@ -30,6 +30,6 @@ form {
 }
 
 .app {
-  padding: 30px;
+  padding: 0;
 }
 </style>
