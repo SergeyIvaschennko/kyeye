@@ -39,7 +39,7 @@
     <input type="link" placeholder="Вставьте ссылку" name="username" required>
   </div>
   <div class = "content2">
-    <form action="Line.html">
+    <form action="###">
       <my-button class="geton">Встать в очередь</my-button>
     </form>
   </div>
@@ -110,25 +110,11 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 22px;
-  align-self: left;
+  align-self: flex-start;
   color: #333333;
   margin-top: 0;
   margin-bottom: 0;
 }
-/*button[type="make"] {*/
-/*  height: auto;*/
-/*  width: 100%;*/
-
-/*  color: white;*/
-/*  border: 3px solid #ffffff;*/
-/*  background-color: #0075FF;*/
-/*  border-radius: 10px;*/
-/*  font-weight: bold;*/
-/*  font-size: 21px;*/
-/*  padding-top: 17px;*/
-/*  padding-bottom: 17px;*/
-/*  margin: 0;*/
-/*}*/
 
 .make {
   color: white;
@@ -141,9 +127,9 @@ input[type="link"] {
   background-color: #ffffff;
   border-radius: 10px;
   font-weight: bold;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 56px;
   padding-left: 15px;
   padding-right: 0px;
   margin: 0;
@@ -151,23 +137,7 @@ input[type="link"] {
   font-size: 16px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: normal;
-
 }
-
-/*button[type="geton"] {*/
-/*  height: auto;*/
-/*  width: 100%;*/
-
-/*  color: white;*/
-/*  border: 3px solid #0075FF;*/
-/*  background-color: #0075FF;*/
-/*  border-radius: 10px;*/
-/*  font-weight: bold;*/
-/*  font-size: 21px;*/
-/*  padding-top: 17px;*/
-/*  padding-bottom: 17px;*/
-/*  margin: 0;*/
-/*}*/
 
 .geton {
   color: white;

@@ -12,14 +12,21 @@ export default {
 
 <style scoped>
 .btn {
-  height: auto;
-  width: 100%;
+  /*height: auto;*/
+  /*width: 100%;*/
 
+  /*border-radius: 10px;*/
+  /*font-weight: bold;*/
+  /*font-size: 21px;*/
+  /*padding-top: 17px;*/
+  /*padding-bottom: 17px;*/
+  /*margin: 0;*/
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 21px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  font-size: 18px;
   margin: 0;
 }
 
