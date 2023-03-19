@@ -12,14 +12,15 @@ export default {
 
 <style scoped>
 .btn {
-  padding: 10px 15px;
-  background: rgb(52, 114, 238);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  height: auto;
+  width: 100%;
+
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 21px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin: 0;
 }
 
 </style>
