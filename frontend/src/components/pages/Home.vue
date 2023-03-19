@@ -69,6 +69,7 @@ export default {
   font-weight: bold;
   font-size: 27px;
   color: #333333;
+  text-decoration: none;
 }
 
 .circle {
