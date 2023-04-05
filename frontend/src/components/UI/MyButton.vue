@@ -16,7 +16,7 @@ export default {
   color: white;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   height: 60px;
   margin: 0;
 }
