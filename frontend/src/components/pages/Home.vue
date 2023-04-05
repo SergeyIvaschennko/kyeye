@@ -1,8 +1,9 @@
 <template>
-  <div class = "header">
-    <a class="logo" href = "###">КУЕУЕ</a>
-    <a class="circle" href = "###"></a>
-  </div>
+<!--  <div class = "header">-->
+<!--    <a class="logo" href = "###">КУЕУЕ</a>-->
+<!--    <a class="circle" href = "###"></a>-->
+<!--  </div>-->
+  <my-header></my-header>
   <div class = "content">
 
     <my-button class="make">Создать очередь</my-button>
@@ -48,40 +49,14 @@
 <script>
 import MyButton from "@/components/UI/MyButton.vue";
 import MyInput from "@/components/UI/MyInput.vue";
+import MyHeader from "@/components/UI/Header.vue";
 export default {
   name: "Home.vue",
-  components: {MyButton, MyInput}
+  components: {MyHeader, MyButton, MyInput}
 }
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.logo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 27px;
-  color: #333333;
-  text-decoration: none;
-}
-
-.circle {
-  width: 39px;
-  height: 39px;
-  border: 2px solid #0075FF;
-  border-radius: 50%;
-  padding: 22px;
-  box-sizing: border-box;
-}
 .content {
   background-color: #0075FF;
   display: flex;
