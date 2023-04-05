@@ -24,7 +24,7 @@ export default {
 }
 .bluebox {
   padding-top: 13px;
-  height: 120px;
+  height: 133px;
   top: 0;
   left: 0;
   right: 10px;
@@ -38,7 +38,7 @@ export default {
   right: 0;
   left: 20px;
   border: 2px solid #0075FF;
-  height: 100px;
+  height: 104px;
   background-color: #ffffff;
   border-radius: 5px;
   display: flex;
