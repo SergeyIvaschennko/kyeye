@@ -1,8 +1,4 @@
 <template>
-<!--  <div class = "header">-->
-<!--    <a class="logo" href = "###">КУЕУЕ</a>-->
-<!--    <a class="circle" href = "###"></a>-->
-<!--  </div>-->
   <my-header></my-header>
   <div class = "content">
 
