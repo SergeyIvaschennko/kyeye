@@ -30,6 +30,9 @@ form {
 }
 
 .app {
-  padding: 30px;
+  /*padding: 30px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
