@@ -1,33 +1,47 @@
 <template>
-  <div class="wrapper">
-    <div class="registration">
-      <div class="title">Регистрация</div>
-      <my-input placeholder="E-mail"
-      v-model="user.email"
-      required></my-input>
-      <my-input placeholder="Имя пользователя"
-      v-model="user.username"
-      required></my-input>
-      <my-input placeholder="Имя"
-      v-model="user.first_name"
-      required></my-input>
-      <my-input placeholder="Фамилия"
-      v-model="user.last_name"
-      required></my-input>
-      <my-input placeholder="Пароль"
-      v-model="user.password"
-      type="password"
-      required></my-input>
-      <my-input placeholder="Пароль (повторить)"
-      v-model="user.repeat_password"
-      type="password"
-      required></my-input>
-      <div class="button__container">
-        <my-button class="sign-up"
-        @click="validateData"
-        >Зарегистрироваться</my-button>
-      </div>
-    </div>
+<!--  <div class="wrapper">-->
+<!--    <div class="registration">-->
+<!--      <div class="title">Регистрация</div>-->
+<!--      <my-input placeholder="E-mail"-->
+<!--      v-model="user.email"-->
+<!--      required></my-input>-->
+<!--      <my-input placeholder="Имя пользователя"-->
+<!--      v-model="user.username"-->
+<!--      required></my-input>-->
+<!--      <my-input placeholder="Имя"-->
+<!--      v-model="user.first_name"-->
+<!--      required></my-input>-->
+<!--      <my-input placeholder="Фамилия"-->
+<!--      v-model="user.last_name"-->
+<!--      required></my-input>-->
+<!--      <my-input placeholder="Пароль"-->
+<!--      v-model="user.password"-->
+<!--      type="password"-->
+<!--      required></my-input>-->
+<!--      <my-input placeholder="Пароль (повторить)"-->
+<!--      v-model="user.repeat_password"-->
+<!--      type="password"-->
+<!--      required></my-input>-->
+<!--      <div class="button__container">-->
+<!--        <my-button class="sign-up"-->
+<!--        @click="validateData"-->
+<!--        >Зарегистрироваться</my-button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <error-list :errors="errors" class="error-list"></error-list>-->
+<!--  </div>-->
+
+  <div class="container">
+    <h1>Начнем 😎</h1>
+    <form action="">
+      <my-input class="text" placeholder="Почта" v-model="user.email" required></my-input>
+      <my-input class="text" placeholder="Имя" v-model="user.first_name" required></my-input>
+      <my-input class="text" placeholder="Фамилия" v-model="user.last_name" required></my-input>
+      <my-input class="text" placeholder="Никнейм" v-model="user.username" required></my-input>
+      <my-input class="text" placeholder="Пароль" v-model="user.password" required></my-input>
+      <my-input class="text" placeholder="Повторите пароль" v-model="user.repeat_password" required></my-input>
+      <my-button class="submit" @click="validateData">Войти</my-button>
+    </form>
     <error-list :errors="errors" class="error-list"></error-list>
   </div>
 </template>
@@ -129,23 +143,40 @@ export default {
 </script>
 
 <style scoped>
-  .sign-up{
-    margin-top: 15px;
+  * {
+    box-sizing: border-box;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .container {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+  }
+  h1 {
+    text-align: left;
+    margin-top: 25px;
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .text {
+    height: 62px;
+    padding: 10px;
+    border: 2px solid #0075ff;
+    border-radius: 5px;
+    font-size: 21px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+  .submit {
+    background-color: #0d74f6;
+    color: #ffffff;
+    border: 3px solid #0075FF;
+    border-radius: 5px;
+    margin-top: 20px;
   }
 
-  .button__container{
-    display: flex;
-    flex-direction: column;
-  }
-  .registration .title{
-    font-family: Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-  }
+
 </style>
