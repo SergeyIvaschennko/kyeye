@@ -31,6 +31,8 @@ form {
 
 .app {
   /*padding: 30px;*/
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
